@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stopwatch</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="columns" style="margin-top:10%">
+	    <div class="column is-5"></div>
+        <div clas="column is-4">
+		<h1 class="title is-2">Stop Watch</h1>
+		<div id="time" class="title is-5">
+			<span class="digit" id="hr">
+			00</span>
+			<span class="txt">Hr</span>
+			<span class="digit" id="min">
+			00</span>
+			<span class="txt">Min</span>
+			<span class="digit" id="sec">
+			00</span>
+			<span class="txt">Sec</span>
+			<span class="digit" id="count">
+			00</span>
+		</div>
+		<div id="buttons">
+			<button class="button is-link" onclick="start()" id="start">
+			Start</button>
+			<button class="button is-outlined" onclick="stop()" id="stop">
+			Stop</button>
+			<button class="button is-outlined is-link" onclick="reset()" id="reset">
+			Reset</button>
+		</div>
+        </div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
